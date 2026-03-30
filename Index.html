@@ -1,1 +1,56 @@
-whalla challenge
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charles - Mon Univers</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+    body{background:#ffffff;color:#111;line-height:1.6}
+    .container{max-width:1100px;margin:auto;padding:40px 20px}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;min-height:80vh}
+    .card{background:#fff;border:1px solid #eee;border-radius:30px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    h1{font-size:64px;line-height:1.1}
+    h2{font-size:36px;margin-bottom:20px}
+    p{color:#555;font-size:18px}
+    .btn{display:inline-block;margin-top:25px;padding:14px 28px;background:#111;color:#fff;text-decoration:none;border-radius:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+    .box{padding:25px;border:1px solid #eee;border-radius:25px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+    .footer{margin-top:60px;text-align:center;padding:40px;border-radius:30px;background:#111;color:#fff}
+    @media(max-width:768px){.hero,.grid{grid-template-columns:1fr}h1{font-size:42px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <div>
+        <p style="letter-spacing:4px;text-transform:uppercase;color:#888;">Modern • Rich • Clean</p>
+        <h1>Charles, 14 ans</h1>
+        <p style="margin-top:20px;max-width:600px;">
+          Salut, moi c’est Charles. J’aime le coding, le débogage, les trottinettes puissantes,
+          les batteries, la vitesse et les gros projets tech. J’adore créer, tester et toujours aller plus loin.
+        </p>
+        <a href="#about" class="btn">Apprendre à me connaître</a>
+      </div>
+      <div class="card">
+        <h2>Pourquoi devenir mon ami ?</h2>
+        <p>Parce qu’avec moi il y a toujours des idées, des projets stylés, des délires tech et une bonne vibe.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Ce que j’aime dans la vie</h2>
+      <div class="grid">
+        <div class="box">💻 Coding & Debug</div>
+        <div class="box">🛴 Trottinettes & vitesse</div>
+        <div class="box">🔋 Batteries & builds tech</div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <h2>Un univers ambitieux</h2>
+      <p>Fun, tech, vitesse et projets : toujours prêt à construire quelque chose d’incroyable.</p>
+    </div>
+  </div>
+</body>
+</html>
